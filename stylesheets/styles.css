@@ -122,10 +122,10 @@ a {
     /* bottom: -16px;/ */
     left: 4px;
     /* font-family: 'airstreamregular'; */
-    display: block;
+    display: block; 
     color: white;
     font-size: 40px;
-    text-shadow: rgba(0, 0, 0, 0.9) 1px 2px 9px;
+    text-shadow: rgb(17, 228, 34) 1px 2px 9px;
 }
 
 @media all and (min-width: 768px) {
