@@ -45,6 +45,19 @@ body {
     min-width: 120px;
     max-width: 120px;
     border: 1px solid rgba(100%, 100%, 100%, 0.8);
+/* 
+    transition: transform 133ms; */
+
+
+    transition: transform 133ms ease-in-out ;
+    /* transform: scale(1,2); */
+}
+
+.thumbnail-item:hover{
+    transform: scale(2,2);
+    /* transition: transform 133ms; */
+    transition: transform 1000ms ease-in;
+
 }
 
 .thumbnail-item + .thumbnail-item{
@@ -68,6 +81,7 @@ body {
     overflow-x: auto;
     /* justify-content: space-between; */
     justify-content: space-between;
+    padding: 20px 0;
 
 }
 
@@ -141,6 +155,11 @@ a {
     max-width: 80%;
 }
 
+.is-tiny {
+    transform: scale(0.001);
+    transition: transform 0ms;
+}
+
 @media all and (min-width: 768px) {
     .main-content {
         flex-direction: row;
@@ -151,6 +170,8 @@ a {
         flex-direction: column;
         order: 0;
         margin-left: 20px;
+
+        padding: 0 35px;
     }
 
     .thumbnail-item {
